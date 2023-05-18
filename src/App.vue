@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <HomeComponent></HomeComponent>
+    <ChildComponent :name="user.name" :data="user"></ChildComponent>
+
+    <p>This paragraph is in the App.Vue File</p>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+import HomeComponent from './components/HomeComponent.vue'
+import ChildComponent from './components/ChildComponent.vue'
+
+  export default {
+    name: "App",
+    data() {
+      return {
+        user: {
+          name: 'Some user name',
+          email: 'saz@samorlhosting.com'
+        }
+      }
+    },
+    components: {
+      HomeComponent,
+      ChildComponent
+    }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style >
 </style>

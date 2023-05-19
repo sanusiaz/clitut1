@@ -9,6 +9,7 @@
   </div> -->
 
   <LoginFormComponent></LoginFormComponent>
+  <WatcherComponentVue></WatcherComponentVue>
 </template>
 
 <script>
@@ -17,6 +18,7 @@
 // import ChildComponent from './components/ChildComponent.vue'
 // import InputComponent from './components/InputComponent.vue'
 import LoginFormComponent from './components/LoginFormComponent.vue'
+import WatcherComponentVue from './components/WatcherComponent.vue'
 
   export default {
     name: "App",
@@ -34,7 +36,8 @@ import LoginFormComponent from './components/LoginFormComponent.vue'
       // HomeComponent,
       // ChildComponent,
       // InputComponent,
-      LoginFormComponent
+      LoginFormComponent,
+      WatcherComponentVue
     },
 
     methods: {

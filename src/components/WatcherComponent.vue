@@ -4,8 +4,8 @@
         ______________________________________
         <h2>Watcher Components Starts Here</h2> <br>
         <p>Count Value is {{ count }}</p>
-        <button @click="increaseCount()">+</button>
-        <button @click="decreaseCount()">-</button>
+        <button class="p-3 bg-gray-400 text-black font-semibold m-2 py-1 rounded-md" @click="increaseCount()">+</button>
+        <button class="p-3 bg-gray-400 text-black font-semibold m-2 py-1 rounded-md" @click="decreaseCount()">-</button>
     </div>
 </template>
 

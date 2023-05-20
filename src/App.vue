@@ -56,6 +56,9 @@
       </template>
     </SlotsComponent>
   </div>
+
+
+  <DynamicComponent></DynamicComponent>
 </template>
 
 <script>
@@ -64,6 +67,7 @@
 // import ChildComponent from './components/ChildComponent.vue'
 // import InputComponent from './components/InputComponent.vue'
 // import LoginFormComponent from './components/LoginFormComponent.vue'
+import DynamicComponent from './components/DynamicComponent.vue';
 import SlotsComponent from './components/SlotsComponent.vue';
 import WatcherComponentVue from './components/WatcherComponent.vue'
 
@@ -85,7 +89,8 @@ import WatcherComponentVue from './components/WatcherComponent.vue'
     // InputComponent,
     // LoginFormComponent,
     WatcherComponentVue,
-    SlotsComponent
+    SlotsComponent,
+    DynamicComponent
 },
 
     methods: {
@@ -95,9 +100,3 @@ import WatcherComponentVue from './components/WatcherComponent.vue'
     }
 }
 </script>
-
-<style scoped>
-.cart-wrapper {
-  
-}
-</style>

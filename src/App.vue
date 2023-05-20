@@ -25,14 +25,33 @@
       </template>
 
       <template v-slot:discount>
-        <div class="absolute -top-3 right-10 bg-red-500 text-white font-semibold rounded-full h-12 w-12 flex justify-center align-middle item-center text-sm p-3">
-           <span> -50%</span>
-        </div>
+          <div> -50%</div>
       </template>
 
       <template v-slot:footer>
         <div>
           <button class="bg-gray-500 text-white text-center font-semibold py-3 px-5 rounded">Add to cart</button>
+        </div>
+      </template>
+    </SlotsComponent>
+
+
+    <SlotsComponent>
+      <template v-slot:header>
+        <div>
+          Header Card Content
+        </div>
+      </template>
+
+      <template v-slot:main>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, soluta?
+        </div>
+      </template>
+
+      <template v-slot:footer>
+        <div>
+          This is my footer which will be in my footer component and this is where i like it to be
         </div>
       </template>
     </SlotsComponent>

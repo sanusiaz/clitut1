@@ -5,7 +5,9 @@
         </div>
         <slot name="main">Default Main Slots Components</slot>
 
-        <slot name="discount">-50%</slot>
+        <div class="absolute -top-3 right-10 bg-red-500 text-white font-semibold rounded-full h-12 w-12 flex justify-center align-middle item-center text-sm p-3">
+            <slot name="discount">-90%</slot>
+        </div>
 
         <slot name="footer">Default Footer Components</slot>
     </div>

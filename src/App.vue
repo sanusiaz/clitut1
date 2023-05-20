@@ -9,8 +9,8 @@
   </div> -->
 
   <!-- <LoginFormComponent></LoginFormComponent> -->
-  <WatcherComponentVue></WatcherComponentVue>
-  <div class="grid grid-cols-4 place-content-center place-items-cemter m-auto">
+  <!-- <WatcherComponentVue></WatcherComponentVue>
+  <div class="grid grid-cols-4 gap-5 place-content-center place-items-cemter m-auto">
     <SlotsComponent>
       <template v-slot:header>
         <div>
@@ -58,7 +58,9 @@
   </div>
 
 
-  <DynamicComponent></DynamicComponent>
+  <DynamicComponent></DynamicComponent> -->
+
+  <HooksComponent></HooksComponent>
 </template>
 
 <script>
@@ -67,9 +69,10 @@
 // import ChildComponent from './components/ChildComponent.vue'
 // import InputComponent from './components/InputComponent.vue'
 // import LoginFormComponent from './components/LoginFormComponent.vue'
-import DynamicComponent from './components/DynamicComponent.vue';
-import SlotsComponent from './components/SlotsComponent.vue';
-import WatcherComponentVue from './components/WatcherComponent.vue'
+// import DynamicComponent from './components/DynamicComponent.vue';
+import HooksComponent from './components/LifeCycleHooksComponent/HooksComponent.vue';
+// import SlotsComponent from './components/SlotsComponent.vue';
+// import WatcherComponentVue from './components/WatcherComponent.vue'
 
   export default {
     name: "App",
@@ -88,9 +91,10 @@ import WatcherComponentVue from './components/WatcherComponent.vue'
     // ChildComponent,
     // InputComponent,
     // LoginFormComponent,
-    WatcherComponentVue,
-    SlotsComponent,
-    DynamicComponent
+    // WatcherComponentVue,
+    // SlotsComponent,
+    // DynamicComponent,
+    HooksComponent
 },
 
     methods: {

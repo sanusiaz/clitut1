@@ -60,7 +60,19 @@
 
   <DynamicComponent></DynamicComponent> -->
 
-  <HooksComponent></HooksComponent>
+  <!-- <HooksComponent></HooksComponent> -->
+  
+
+  <!-- Navigation -->
+  <NavComponent></NavComponent>
+
+  <main>
+    <router-view></router-view>
+  </main>
+
+  <teleport to='#footer'>
+    <ApplicationFooterComponent></ApplicationFooterComponent>
+  </teleport>
 </template>
 
 <script>
@@ -70,9 +82,11 @@
 // import InputComponent from './components/InputComponent.vue'
 // import LoginFormComponent from './components/LoginFormComponent.vue'
 // import DynamicComponent from './components/DynamicComponent.vue';
-import HooksComponent from './components/LifeCycleHooksComponent/HooksComponent.vue';
+// import HooksComponent from './components/LifeCycleHooksComponent/HooksComponent.vue';
 // import SlotsComponent from './components/SlotsComponent.vue';
 // import WatcherComponentVue from './components/WatcherComponent.vue'
+import NavComponent from './components/Header/NavComponent.vue'
+import ApplicationFooterComponent from './components/Footer/ApplicationFooterComponent.vue'
 
   export default {
     name: "App",
@@ -94,7 +108,9 @@ import HooksComponent from './components/LifeCycleHooksComponent/HooksComponent.
     // WatcherComponentVue,
     // SlotsComponent,
     // DynamicComponent,
-    HooksComponent
+    // HooksComponent,
+    NavComponent,
+    ApplicationFooterComponent
 },
 
     methods: {

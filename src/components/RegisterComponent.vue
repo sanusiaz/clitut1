@@ -43,12 +43,15 @@ export default {
             let type        = spiltedData[1];
 
             if ( type === 'username' ) {
+                // we can validate fields here also
                 this.form.username = __value
             }
             else if ( type === 'password' ) {
+                // we can validate users password here
                 this.form.password = __value
             }
             else if ( type === 'email' ) {
+                // we can validate email address here
                 this.form.email = __value
             }
 

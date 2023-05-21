@@ -13,9 +13,7 @@
             Showing Popup here
         </div>
 
-        <ol>
-            <li v-for="user in users" :key="user.email"><UserComponent :item="user"></UserComponent></li>
-        </ol>
+
 
         <ul>
             <li v-for="student in students" :key="student.id">{{ student.name }}</li>
@@ -27,13 +25,11 @@
 
 <script>
     import TeachersComponent from './TeachersComponent.vue'
-    import UserComponent from './UserComponent.vue'
 
     export default {
         name: 'HomeComponent',
         components: {
-            TeachersComponent,
-            UserComponent
+            TeachersComponent
         },
         data() {
             return {

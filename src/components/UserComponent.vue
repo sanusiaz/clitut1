@@ -1,17 +1,22 @@
 <template>
     <div>
-        <h2>{{ item.name }} ..... {{ item.email }}</h2>
+        User Name is: {{ routeParams.name }}
     </div> 
 </template>
 
 
 <script>
+import {useRoute} from 'vue-router'
 export default {
     name: 'UserComponent',
-    props: {
-        item: {
-            type: Object
+    data() {
+        return {
+            routeParams: {}
         }
+    },
+    mounted() {
+        const route = useRoute();
+        this.routeParams = route.params; 
     }
 }
 </script>

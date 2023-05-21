@@ -3,6 +3,7 @@ import HomeComponent from './components/HomeComponent.vue'
 import AboutUsComponent from './components/AboutUsComponent.vue'
 import ContactComponent from './components/ContactComponent.vue'
 import FaqsComponent from './components/FaqsComponent.vue'
+import UserComponent from './components/UserComponent.vue'
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         name: 'About',
         path: '/about',
         component: AboutUsComponent
+    },
+    {
+        name: 'User',
+        path: '/user/:name',
+        component: UserComponent
     }
 ];
 

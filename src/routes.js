@@ -4,6 +4,7 @@ import AboutUsComponent from './components/AboutUsComponent.vue'
 import ContactComponent from './components/ContactComponent.vue'
 import FaqsComponent from './components/FaqsComponent.vue'
 import UserComponent from './components/UserComponent.vue'
+import PageNotFoundComponent from './components/PageNotFoundComponent.vue'
 
 const routes = [
     {
@@ -30,6 +31,11 @@ const routes = [
         name: 'User',
         path: '/user/:name',
         component: UserComponent
+    },
+    {
+        name: 'PageNotFound',
+        path: '/:pathMatch(.*)*',
+        component: PageNotFoundComponent
     }
 ];
 

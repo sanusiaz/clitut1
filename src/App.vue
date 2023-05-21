@@ -120,3 +120,10 @@ import ApplicationFooterComponent from './components/Footer/ApplicationFooterCom
     }
 }
 </script>
+
+<style>
+  main {
+    padding: 20px 0px;
+    margin-bottom: 10px;
+  }
+</style>

@@ -5,6 +5,7 @@ import ContactComponent from './components/ContactComponent.vue'
 import FaqsComponent from './components/FaqsComponent.vue'
 import UserComponent from './components/UserComponent.vue'
 import PageNotFoundComponent from './components/PageNotFoundComponent.vue'
+import JobsComponent from './components/Api/JobsComponent.vue'
 
 const routes = [
     {
@@ -31,6 +32,11 @@ const routes = [
         name: 'User',
         path: '/user/:name',
         component: UserComponent
+    },
+    {
+        name: 'ApiGet',
+        path: '/jobs',
+        component: JobsComponent
     },
     {
         name: 'PageNotFound',
